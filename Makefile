@@ -17,7 +17,8 @@ SRCS =  MOM_io.F90 MOM_error_handler.F90 ../MOM6/src/ALE/polynomial_functions.F9
 	../MOM6/src/ALE/regrid_consts.F90 ../MOM6/src/ALE/PLM_functions.F90\
 	../MOM6/src/ALE/regrid_consts.F90 ../MOM6/src/ALE/PPM_functions.F90\
 	../MOM6/src/ALE/regrid_consts.F90 ../MOM6/src/ALE/PQM_functions.F90\
-	../MOM6/src/ALE/regrid_interp.F90 ../MOM6/src/ALE/MOM_remapping.F90
+	../MOM6/src/ALE/regrid_interp.F90 ../MOM6/src/ALE/MOM_remapping.F90\
+        ../MOM6/src/ALE/MOM_remapping.F90
 
 
 OBJECTS = $(SRCS:.F90=.o)
