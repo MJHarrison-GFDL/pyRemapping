@@ -39,7 +39,7 @@ contains
     ni=size(u_in,1);nj=size(u_in,2);nz=size(u_in,3);nz2=size(zo,3)-1
 
 
-    if (ni /= size(zi,1) .or. nj .ne. size(zi,2) .or. nz /= size(zi,3)) call MOM_error(FATAL,'size mismatch u_in/zi')
+    if (ni /= size(zi,1) .or. nj .ne. size(zi,2) .or. nz /= size(zi,3)-1) call MOM_error(FATAL,'size mismatch u_in/zi')
     if (ni /= size(zo,1) .or. nj .ne. size(zo,2)) call MOM_error(FATAL,'size mismatch u_in/zo')
 
     call initialize_remapping(CS, method, boundary_extrapolation=bndy_extrapolation )

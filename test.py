@@ -10,7 +10,6 @@ dz1 = z1[1:]-z1[:-1]
 
 u_in = u0[np.newaxis,np.newaxis,:]
 z_in = z0[np.newaxis,np.newaxis,:]
-#u_out = u1[np.newaxis,np.newaxis,:]
 z_out = z1[np.newaxis,np.newaxis,:]
 
 u_out=remap.remap_mod.remap(u_in,z_in,z_out,method='PCM',bndy_extrapolation=False)
